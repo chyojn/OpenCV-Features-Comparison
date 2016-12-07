@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(OPENCV_FEATURES_COMPARISON)
 
-find_package(OpenCV 3.0.0 REQUIRED)
+set(OpenCV_DIR /usr/local/opt/opencv3/share/OpenCV)
+find_package(OpenCV 3.1.0 REQUIRED)
 find_package(OpenMP)
 
 if (OPENMP_FOUND)
